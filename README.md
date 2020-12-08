@@ -4,13 +4,13 @@ A Python program that scans piano videos (like from Synthesia) and converts them
 # Usage
 First you need to install the following software:
 
-  * [midicsv](https://www.fourmilab.ch/webtools/midicsv/)
   * [ffmpeg](https://ffmpeg.org/)
   * [python3](https://www.python.org/) (obviously)
 
 Then the following PIP packages:
   * ffmpeg-python
   * pillow
+  * py_midicsv
 
 After installing the dependencies you need to obtain a video. (possible with [youtube-dl](https://youtube-dl.org/))
 
@@ -23,9 +23,5 @@ Then you'll need to edit the key mapping according to your video. Take a screeng
 Run the python script:
 
     python3 script.py
-
-After the script finishes process the csv file:
-
-    csvmidi midi.csv output.mid
 
 Enjoy your MIDI file!

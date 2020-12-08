@@ -2,6 +2,7 @@ import ffmpeg
 from PIL import Image
 import csv
 from config import *
+import py_midicsv as pm
 
 
 keys = []
@@ -83,7 +84,12 @@ while True:
 midimessages.append([2,int(relativetime*bps*ccpqn),'End_track'])
 midimessages.append([0,0,'End_of_file'])
 
-csvfile = open('midi.csv', 'w')
+csvfile = open('output.mid', 'w')
 csvwriter = csv.writer(csvfile)
 csvwriter.writerows(midimessages)
 csvfile.close()
+mid = pm.csv_to_midi('output.mid')
+with open("output.mid", "wb") as output_file:
+    midi_writer = pm.FileWriter(output_file)
+    midi_writer.write(mid)
+    output_file.close()
