@@ -1,4 +1,5 @@
 config.py
+__pycache__
 *.mkv
 *.mp4
 *.webm
