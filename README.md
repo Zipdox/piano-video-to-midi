@@ -1,5 +1,5 @@
 # piano-video-to-midi
-A Python program that scans piano videos (like from Synesthesia) and converts them to MIDI.
+A Python program that scans piano videos (like from Synthesia) and converts them to MIDI.
 
 # Usage
 First you need to install the following software:
