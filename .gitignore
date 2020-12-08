@@ -1,0 +1,5 @@
+config.py
+*.mkv
+*.mp4
+*.webm
+*.mid
